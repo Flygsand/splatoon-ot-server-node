@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var app = require('../lib/splatoon')
+  , http = require('http');
+
+http.createServer(app).listen(process.env.PORT);
